@@ -1,0 +1,16 @@
+create user 'zjc'@'%' identified by 'zjc';
+//创建用户设置密码
+grant all privileges  on ry.* to "zjc"@'%';
+//授权
+flush privileges;
+//刷新
+
+spring.datasource.url=jdbc:mysql://localhost:3306/xxx?serverTimezone=GMT&useUnicode=true&characterEncoding=UTF-8
+//? 表示路径已结束
+//useUnicode=true&characterEncoding=UTF-8 设置中文不乱码
+//xxx 用数据库名称替换
+//serverTimezone=GMT 消除时差
+
+spring.datasource.username=zjc
+spring.datasource.password=zjc
+//配置账号密码
