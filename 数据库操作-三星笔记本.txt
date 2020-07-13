@@ -1,0 +1,4 @@
+# 指定任何ip的mjj用户登录
+create user 'zjc'@'%' identified by 'zjc';
+grant all privileges  on ry.* to "zjc"@'%';
+flush privileges;
